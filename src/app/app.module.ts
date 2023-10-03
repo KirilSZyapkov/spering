@@ -11,6 +11,12 @@ import { EmployerComponent } from './pages/registration/components/employer/empl
 import { JobDetailsComponent } from './pages/job-details/job-details.component';
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ButtonComponent } from './components/button/button.component';
+import { JobsListComponent } from './components/jobs-list/jobs-list.component';
+import { JobComponent } from './components/job/job.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { CalendarComponent } from './pages/calendar/calendar.component';
     EmployerComponent,
     JobDetailsComponent,
     MyProfileComponent,
-    CalendarComponent
+    CalendarComponent,
+    HeaderComponent,
+    FooterComponent,
+    ButtonComponent,
+    JobsListComponent,
+    JobComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
