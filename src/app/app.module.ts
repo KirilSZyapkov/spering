@@ -17,6 +17,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { JobsListComponent } from './components/jobs-list/jobs-list.component';
 import { JobComponent } from './components/job/job.component';
 import { CategoryComponent } from './components/category/category.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CategoryComponent } from './components/category/category.component';
     ButtonComponent,
     JobsListComponent,
     JobComponent,
-    CategoryComponent
+    CategoryComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
