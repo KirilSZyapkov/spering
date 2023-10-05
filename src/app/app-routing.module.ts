@@ -7,6 +7,7 @@ import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { JobSearchComponent } from './pages/job-search/job-search.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { JobDetailsComponent } from './pages/job-details/job-details.component';
 
 const routes: Routes = [
   {
@@ -22,12 +23,16 @@ const routes: Routes = [
     component: RegistrationComponent,
   },
   {
-    path: 'my-profile',
+    path: 'user/:userId',
     component: MyProfileComponent,
   },
   {
     path: 'job-search',
     component: JobSearchComponent,
+  },
+  {
+    path:"job-details/:id",
+    component: JobDetailsComponent
   },
   {
     path: 'calendar',
