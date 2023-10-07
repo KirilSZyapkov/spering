@@ -1,0 +1,19 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1a2e35), color-stop(55%, #1cbbb4));
+}
+
+.header-links{
+    /* background-color: #1a2e35; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* min-width: 250px; */
+}
+
+.header-user-section{
+    /* background-color: #1cbbb4; */
+    width: 40%;
+}
