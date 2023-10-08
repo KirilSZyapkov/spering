@@ -5,15 +5,41 @@
 }
 
 .header-links{
-    /* background-color: #1a2e35; */
-    width: 60%;
+    position: relative;
+    width: 55%;
     display: flex;
     align-items: center;
     gap: 20px;
-    /* min-width: 250px; */
+    border: 1px solid red;
 }
 
+.head-logo{
+    border: 1px solid yellow;
+    padding: 10px 30px;
+}
+.head-logo img {
+    width: 40px;
+}
+
+.link-list{
+    position: absolute;
+    left: 120px;
+    transition: 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.ofset{
+    /* left: 2300px; */
+}
+
+.link-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
 .header-user-section{
-    /* background-color: #1cbbb4; */
-    width: 40%;
+    
+    flex-grow: 1;
+    border: 1px solid green;
 }
