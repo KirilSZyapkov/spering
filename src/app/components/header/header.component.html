@@ -8,12 +8,12 @@
         </div>
     </div>
     <div class="header-user-section">
-        <div>
+        <div class="user-link">
             <a routerLink="/login">Login</a>
             <a routerLink="/registration">Registration</a>
             <a routerLink="">Logout</a>
             <a routerLink="/user/1">Profile</a>
         </div>
-        <div><i class="uil uil-bars"></i></div>
+        <div (click)="click()" class="hamburger-menu"><i class="uil uil-bars"></i></div>
     </div>
 </header>

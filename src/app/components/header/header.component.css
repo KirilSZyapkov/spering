@@ -22,9 +22,8 @@
 }
 
 .link-list{
-    position: absolute;
-    left: 120px;
-    transition: 1s ease-in-out;
+    /* transform: translateX(15550px); */
+    transition: transform 1s ease-in-out;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -38,8 +37,34 @@
     color: white;
     font-size: 1.1rem;
 }
+
+.user-link{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* transform: translateX(150px); */
+}
+
+.user-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
 .header-user-section{
     
     flex-grow: 1;
     border: 1px solid green;
+    display:  flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hamburger-menu{
+    /* border: 1px solid yellow; */
+    padding: 2px 26px;
+}
+
+.uil{
+    font-size: 35px;
+    cursor: pointer;
 }
