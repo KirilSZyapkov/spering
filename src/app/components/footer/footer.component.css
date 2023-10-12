@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-color: #1a2e35;
+}
+
+.footer-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.common-styles{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.copy-rights{
+    text-align: center;
+    background-color: #fdfeff;
+}
