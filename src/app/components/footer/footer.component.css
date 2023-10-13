@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    background-color: #1a2e35;
+    background-color: #0b1418;
+    color: white;
 }
 
 .footer-wraper{
@@ -11,14 +12,26 @@
     justify-content: space-evenly;
 }
 
+.links-title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .common-styles{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     padding: 10px;
+}
+
+.common-styles a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+   
 }
 
 .copy-rights{
     text-align: center;
     background-color: #fdfeff;
+    color: black;
 }

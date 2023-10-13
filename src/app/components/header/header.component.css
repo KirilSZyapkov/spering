@@ -10,11 +10,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .head-logo{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding: 10px 30px;
 }
 .head-logo img {
@@ -22,14 +22,13 @@
 }
 
 .link-list{
-    /* transform: translateX(15550px); */
     transition: transform 1s ease-in-out;
     display: flex;
     align-items: center;
     gap: 30px;
 }
 .ofset{
-    /* left: 2300px; */
+    transform: translateX(15550px);
 }
 
 .link-list a{
@@ -53,7 +52,7 @@
 .header-user-section{
     
     flex-grow: 1;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display:  flex;
     align-items: center;
     justify-content: end;
