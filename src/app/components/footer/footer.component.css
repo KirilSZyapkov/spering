@@ -30,6 +30,12 @@
    
 }
 
+.common-styles a:hover {
+    text-decoration: underline;
+    scale: 1.1;
+    transition: scale 200ms ease-in-out;
+}
+
 .copy-rights{
     text-align: center;
     background-color: #fdfeff;

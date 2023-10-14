@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  translateX: string = "translateX(1350px)";
 
   click(){
+    this.translateX = "translateX(0px)";
     console.log("hi");
+    
   }
 }

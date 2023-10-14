@@ -1,14 +1,14 @@
 <header class="header-container">
     <div class="header-links">
         <div class="head-logo"><img src="assets/logo.png" alt="logo"/></div>
-        <div class="link-list ofset">
+        <div class="link-list" [ngStyle]="{'transform': translateX }">
             <a routerLink="/">Home</a>
             <a routerLink="/job-search">Job Search</a>
             <a routerLink="/calendar">Calendar</a>
         </div>
     </div>
     <div class="header-user-section">
-        <div class="user-link ofset">
+        <div class="user-link">
             <a routerLink="/login">Login</a>
             <a routerLink="/registration">Registration</a>
             <a routerLink="">Logout</a>
