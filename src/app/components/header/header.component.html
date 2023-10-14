@@ -1,6 +1,6 @@
 <header class="header-container">
     <div class="header-links">
-        <div class="head-logo"><img src="assets/logo.png" alt="logo"/></div>
+        <div class="head-logo"><img src="assets/logo.png" alt="logo" /></div>
         <div class="link-list" [ngStyle]="{'transform': translateX }">
             <a routerLink="/">Home</a>
             <a routerLink="/job-search">Job Search</a>
@@ -8,12 +8,16 @@
         </div>
     </div>
     <div class="header-user-section">
-        <div class="user-link">
+        <div class="user-link" [ngStyle]="{'transform': translateX }">
             <a routerLink="/login">Login</a>
             <a routerLink="/registration">Registration</a>
             <a routerLink="">Logout</a>
             <a routerLink="/user/1">Profile</a>
         </div>
-        <div (click)="click()" class="hamburger-menu"><i class="uil uil-bars"></i></div>
+
+
     </div>
+    <div *ngIf="isOpen" (click)="showLinks()" class="hamburger-menu"><i class="uil uil-bars"></i></div>
+    <div *ngIf="isClose" (click)="hideLinks()" class="btn-close">&times;</div>
+
 </header>

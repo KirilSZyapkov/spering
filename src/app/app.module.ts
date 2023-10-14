@@ -24,6 +24,7 @@ import { IgxCalendarModule } from 'igniteui-angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostJobComponent } from './pages/post-job/post-job.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

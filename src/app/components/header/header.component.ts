@@ -7,10 +7,18 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   translateX: string = "translateX(1350px)";
+  isOpen:boolean = true;
+  isClose:boolean = false;
 
-  click(){
+  showLinks(){
     this.translateX = "translateX(0px)";
-    console.log("hi");
-    
+    this.isOpen = false;
+    this.isClose = true;
+  }
+
+  hideLinks(){
+    this.translateX = "translateX(1350px)";
+    this.isOpen = true;
+    this.isClose = false;
   }
 }
