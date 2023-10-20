@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -17,4 +17,14 @@ export class JobseekerComponent {
     termOfUse: new FormControl(''),
     personalData: new FormControl(''),
   });
+
+  @Input() jobseeker:boolean;
+  
+
+  @Output() onJobseekerBack = new EventEmitter();
+
+  onSetBack(){
+    this.jobseeker = !this.jobseeker;
+    this.onJobseekerBack.emit(this.jobseeker);
+  }
 }

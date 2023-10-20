@@ -40,4 +40,6 @@
     color: white;
     cursor: pointer;
     font-size: 25px;
+    border: none;
+    outline: none;
 }

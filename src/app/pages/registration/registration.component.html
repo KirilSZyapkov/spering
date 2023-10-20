@@ -16,5 +16,5 @@
         </div>
     </article>
     <app-employer *ngIf="employer"></app-employer>
-    <app-jobseeker *ngIf="jobseeker"></app-jobseeker>
+    <app-jobseeker *ngIf="jobseeker" [jobseeker]="jobseeker" (onJobseekerBack)="backFromJobseeker($event)"></app-jobseeker>
 </section>
