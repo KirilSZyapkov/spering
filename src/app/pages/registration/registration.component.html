@@ -15,6 +15,6 @@
             <div class="btn" (click)="onClickEmployer()">Select</div>
         </div>
     </article>
-    <app-employer *ngIf="employer"></app-employer>
+    <app-employer *ngIf="employer" [employer]="employer" (onEmployerBack)="backFromEmployer($event)"></app-employer>
     <app-jobseeker *ngIf="jobseeker" [jobseeker]="jobseeker" (onJobseekerBack)="backFromJobseeker($event)"></app-jobseeker>
 </section>

@@ -24,4 +24,9 @@ export class RegistrationComponent {
     this.registration = true;
     this.jobseeker = value;
   }
+
+  backFromEmployer(value: boolean){
+    this.registration = true;
+    this.employer = value;
+  }
 }
