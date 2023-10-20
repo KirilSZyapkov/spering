@@ -18,11 +18,15 @@ export class JobseekerComponent {
     personalData: new FormControl(''),
   });
 
-  @Input() jobseeker:boolean;
+  @Input() jobseeker: boolean;
   @Output() onJobseekerBack = new EventEmitter();
 
-  onSetBack(){
+  onSetBack() {
     this.jobseeker = !this.jobseeker;
     this.onJobseekerBack.emit(this.jobseeker);
+  }
+
+  onRegistrate(): void {
+    console.log('hi');
   }
 }

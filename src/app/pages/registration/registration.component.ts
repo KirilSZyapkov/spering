@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css'],
 })
 export class RegistrationComponent {
-  registration: boolean = true;
-  jobseeker: boolean = false;
+  registration: boolean = false;
+  jobseeker: boolean = true;
   employer: boolean = false;
 
   onClickJobseeker() {

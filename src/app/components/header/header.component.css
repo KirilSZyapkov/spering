@@ -11,14 +11,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    /* overflow: hidden; */
-
-    /* border: 1px solid red; */
+  
 }
 
 .head-logo{
-    /* border: 1px solid yellow; */
+   
     padding: 10px 30px;
+    flex-shrink: 0;
 }
 .head-logo img {
     width: 40px;
@@ -30,9 +29,7 @@
     align-items: center;
     gap: 30px;
 }
-/* .ofset{
-    transform: translateX(15550px);
-} */
+
 
 .link-list a{
     text-decoration: none;
@@ -46,7 +43,6 @@
     gap: 30px;
     transition: transform 500ms ease-in-out;
 
-    /* transform: translateX(150px); */
 }
 
 .user-link a {
@@ -57,14 +53,13 @@
 .header-user-section{
     
     flex-grow: 1;
-    /* border: 1px solid green; */
+   
     display:  flex;
     align-items: center;
     justify-content: center;
 }
 
 .hamburger-menu{
-    /* border: 1px solid yellow; */
     padding: 2px 26px;
 }
 
