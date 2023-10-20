@@ -1,10 +1,33 @@
-<form [formGroup]="jobseekerForm" >
+<app-button title="<-Back" type="button" variant="background: none; text-decoration: underline; color: blue; outline: none; cursor: pointer; border: none;
+    font-size: 20px" (btnOnClick)="onSetBack()"></app-button>
+<form [formGroup]="jobseekerForm" class="jobseeker-form">
 
-    <label for="firstName">First Name: </label>
-    <input id="firstName" type="text" formControlName="firstName">
 
-    <label for="lastName">Last Name: </label>
-    <input id="lastName" type="text" formControlName="lastName">
+    <input class="form-input" id="firstName" placeholder="First Name" required="true" type="text" formControlName="firstName" />
 
-    <app-button title="<-Back" type="button" variant="" (btnOnClick)="onSetBack()"></app-button>
+
+    <input class="form-input" id="lastName" type="text" placeholder="Last Name" required="true" formControlName="lastName" />
+
+
+    <input class="form-input" id="email" type="email" placeholder="Email" required="true" formControlName="email" />
+
+
+    <input class="form-input" id="password" type="password" required="true" placeholder="Password" formControlName="password" />
+
+
+    <input class="form-input" id="rePassword" type="password" placeholder="Re-Enter Password" required="true"
+        formControlName="rePassword" />
+        
+    <div class="checkbox-form">
+        <input id="age" name="age" type="checkbox" />
+        <label for="age">I delcare, I am at least 18 years old. *</label>
+    </div>
+    <div class="turm-of-use-form">
+        <input id="turmOfUse" name="turmOfUse" type="checkbox" />
+        <label for="turmOfUse">I have read and agree with <span> Terms of Use</span> *</label>
+    </div>
+    <div class="personal-data-form">
+        <input id="personalData" name="personalData" type="checkbox" />
+        <label for="personalData">I have read and agree with <span> Personal data</span> *</label>
+    </div>
 </form>

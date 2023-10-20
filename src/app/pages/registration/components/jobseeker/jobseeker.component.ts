@@ -19,8 +19,6 @@ export class JobseekerComponent {
   });
 
   @Input() jobseeker:boolean;
-  
-
   @Output() onJobseekerBack = new EventEmitter();
 
   onSetBack(){
