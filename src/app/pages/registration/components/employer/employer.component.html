@@ -1,1 +1,63 @@
-<p>employer works!</p>
+<app-button title="<-Back" type="button" variant="background: none; text-decoration: underline; color: blue; outline: none; cursor: pointer; border: none;
+    font-size: 20px" (btnOnClick)="onSetBack()"></app-button>
+<form [formGroup]="employerForm" class="jobseeker-form">
+
+    <div class="input-form-list">
+
+        
+        
+        <input class="form-input" id="companyName" type="text" required="true" placeholder="Company Name"
+        formControlName="companyName" />
+
+        <input class="form-input" id="id_number" type="text" placeholder="ID Number" required="true" formControlName="idNumber" />
+
+        <input class="form-input" id="firstName" placeholder="First Name" required="true" type="text"
+            formControlName="firstName" />
+
+
+        <input class="form-input" id="lastName" type="text" placeholder="Last Name" required="true"
+            formControlName="lastName" />
+
+
+        <input class="form-input" id="email" type="email" placeholder="Email" required="true" formControlName="email" />
+
+
+
+        <input class="form-input" id="phone" type="number" placeholder="Phone Number" required="true"
+            formControlName="phoneNumber" />
+
+        <input class="form-input" id="password" type="password" required="true" placeholder="Password"
+            formControlName="password" />
+
+
+        <input class="form-input" id="rePassword" type="password" placeholder="Re-Enter Password" required="true"
+            formControlName="rePassword" />
+    </div>
+
+    <div class="checkbox-form-list">
+
+        <div class="checkbox-form">
+            <input id="age" name="age" type="checkbox" />
+            <label for="age">I delcare, I am at least 18 years old. *</label>
+        </div>
+        <div class="checkbox-form">
+            <input id="turmOfUse" name="turmOfUse" type="checkbox" />
+            <label for="turmOfUse">I have read and agree with <span class="text-span"> Terms of Use</span> *</label>
+        </div>
+        <div class="checkbox-form">
+            <input id="personalData" name="personalData" type="checkbox" />
+            <label for="personalData">I have read and agree with <span class="text-span"> Personal data</span> *</label>
+        </div>
+    </div>
+    <div class="submit-btn">
+        <app-button type="submit" title="Registrate" variant="width: 150px;
+        text-align: center;
+        padding: 5px;
+        background: #1a2e35;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+        outline: none" (btnOnClick)="onRegistrate()"></app-button>
+    </div>
+</form>
