@@ -1,1 +1,24 @@
-<p>login works!</p>
+<section class="login-container">
+    <h1 class="login-title">Login</h1>
+    <form [formGroup]="loginForm" class="login-form">
+
+        <div class="input-form-list">
+            <input class="form-input" id="email" type="email" placeholder="Email" required="true"
+                formControlName="email" />
+            <input class="form-input" id="password" type="password" required="true" placeholder="Password"
+                formControlName="password" />
+        </div>
+
+        <div class="submit-btn">
+            <app-button type="submit" title="Login" variant="width: 150px;
+            text-align: center;
+            padding: 5px;
+            background: #1a2e35;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            border: none;
+            outline: none" (btnOnClick)="onLogin()"></app-button>
+        </div>
+    </form>
+</section>
