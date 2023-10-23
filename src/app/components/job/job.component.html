@@ -1,1 +1,5 @@
-<p class="test">{{job.title}}</p>
+<a routerLink="/job-details/{{job.id}}" class="card-wrapper">
+    <h4 class="job-title">{{job.title}}</h4>
+    <h5 class="job-subtitle">{{job.posted_from}}</h5>
+    <p class="job-data">{{job.posted_at}}</p>
+</a>
