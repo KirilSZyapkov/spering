@@ -28,6 +28,13 @@
     margin: 0;
 }
 
+.job-logo{
+    display: inline-block;
+    margin: 0;
+    width: 120px;
+    
+}
+
 .job-data{
     margin: 0;
     margin-bottom: -20px;

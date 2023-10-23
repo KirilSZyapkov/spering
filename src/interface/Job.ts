@@ -15,4 +15,5 @@ export interface Job {
     suitable_for?: string,
     experience?: string,
     salary?: string,
+    logoUrl: string
 }

@@ -5,6 +5,7 @@ export const JOBS_POSTS: Job[] = [
     id: 1,
     posted_at: '20.10.2023',
     posted_from: 'EVN',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
     location: 'Plovdiv',
     responsibilities:
@@ -31,6 +32,7 @@ export const JOBS_POSTS: Job[] = [
     id: 2,
     posted_at: '11.05.2023',
     posted_from: 'Mercedes-Benz',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
     location: 'Sofia',
     responsibilities:
@@ -58,6 +60,7 @@ export const JOBS_POSTS: Job[] = [
     id: 3,
     posted_at: '06.03.2023',
     posted_from: 'Yettel',
+    logoUrl:'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
     location: 'Varna',
     responsibilities:
@@ -85,6 +88,7 @@ export const JOBS_POSTS: Job[] = [
     id: 1,
     posted_at: '20.10.2023',
     posted_from: 'EVN',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
     location: 'Plovdiv',
     responsibilities:
@@ -111,6 +115,7 @@ export const JOBS_POSTS: Job[] = [
     id: 2,
     posted_at: '11.05.2023',
     posted_from: 'Mercedes-Benz',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
     location: 'Sofia',
     responsibilities:
@@ -138,6 +143,7 @@ export const JOBS_POSTS: Job[] = [
     id: 3,
     posted_at: '06.03.2023',
     posted_from: 'Yettel',
+    logoUrl:'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
     location: 'Varna',
     responsibilities:
@@ -165,6 +171,7 @@ export const JOBS_POSTS: Job[] = [
     id: 1,
     posted_at: '20.10.2023',
     posted_from: 'EVN',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
     location: 'Plovdiv',
     responsibilities:
@@ -191,6 +198,7 @@ export const JOBS_POSTS: Job[] = [
     id: 2,
     posted_at: '11.05.2023',
     posted_from: 'Mercedes-Benz',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
     location: 'Sofia',
     responsibilities:
@@ -218,6 +226,7 @@ export const JOBS_POSTS: Job[] = [
     id: 3,
     posted_at: '06.03.2023',
     posted_from: 'Yettel',
+    logoUrl:'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
     location: 'Varna',
     responsibilities:
