@@ -24,6 +24,7 @@ import { HammerModule } from '@angular/platform-browser';
 import { IgxCalendarModule } from 'igniteui-angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostJobComponent } from './pages/post-job/post-job.component';
+import { JobCardComponent } from './pages/job-search/job-card/job-card.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { PostJobComponent } from './pages/post-job/post-job.component';
     CategoryComponent,
     HomeComponent,
     NotFoundComponent,
-    PostJobComponent
+    PostJobComponent,
+    JobCardComponent
   ],
   imports: [
     BrowserModule,
