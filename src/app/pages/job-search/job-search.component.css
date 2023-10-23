@@ -1,0 +1,8 @@
+.job-search-container{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 20px;
+    padding: 20px 50px;
+    justify-content: space-evenly;
+}
