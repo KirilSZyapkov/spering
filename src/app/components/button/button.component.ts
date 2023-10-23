@@ -20,6 +20,8 @@ export class ButtonComponent {
     });
 
     cssClass?.map((e) => Object.assign(this.styles, e));
+    
+    
   }
 
   onClick(): void {

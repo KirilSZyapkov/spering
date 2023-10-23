@@ -15,6 +15,8 @@ export class LoginComponent {
   });
 
   onLogin(): void{
+    const {email, password} = this.loginForm.controls;
+console.log(email.value, password.value);
 
   }
 }
