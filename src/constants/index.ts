@@ -1,4 +1,5 @@
-import { Job } from "src/interface/Job";
+import { Job } from 'src/interface/Job';
+import { User } from 'src/interface/User';
 
 export const JOBS_POSTS: Job[] = [
   {
@@ -60,7 +61,7 @@ export const JOBS_POSTS: Job[] = [
     id: 3,
     posted_at: '06.03.2023',
     posted_from: 'Yettel',
-    logoUrl:'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
     location: 'Varna',
     responsibilities:
@@ -85,7 +86,7 @@ export const JOBS_POSTS: Job[] = [
     salary: '2800BGN',
   },
   {
-    id: 1,
+    id: 4,
     posted_at: '20.10.2023',
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
@@ -112,7 +113,7 @@ export const JOBS_POSTS: Job[] = [
     salary: '1600BGN net',
   },
   {
-    id: 2,
+    id: 5,
     posted_at: '11.05.2023',
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
@@ -140,10 +141,10 @@ export const JOBS_POSTS: Job[] = [
     salary: '800BGN',
   },
   {
-    id: 3,
+    id: 6,
     posted_at: '06.03.2023',
     posted_from: 'Yettel',
-    logoUrl:'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
     location: 'Varna',
     responsibilities:
@@ -168,7 +169,7 @@ export const JOBS_POSTS: Job[] = [
     salary: '2800BGN',
   },
   {
-    id: 1,
+    id: 7,
     posted_at: '20.10.2023',
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
@@ -195,7 +196,7 @@ export const JOBS_POSTS: Job[] = [
     salary: '1600BGN net',
   },
   {
-    id: 2,
+    id: 8,
     posted_at: '11.05.2023',
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
@@ -223,10 +224,10 @@ export const JOBS_POSTS: Job[] = [
     salary: '800BGN',
   },
   {
-    id: 3,
+    id: 9,
     posted_at: '06.03.2023',
     posted_from: 'Yettel',
-    logoUrl:'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
+    logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
     location: 'Varna',
     responsibilities:
@@ -249,5 +250,31 @@ export const JOBS_POSTS: Job[] = [
     suitable_for: 'Not sutable for students.',
     experience: '5+ years of experience.',
     salary: '2800BGN',
+  },
+];
+
+export const USERS: User[] = [
+  {
+    id: '1',
+    fistName: 'Maya',
+    lastName: 'Magapasa',
+    email: 'email@EmailValidator.com',
+    companyName: '',
+    idNumber: '',
+    phoneNumber: '',
+    role: 'jobseeker',
+    createdAt: new Date(),
+  },
+  {
+    id: '2',
+    fistName: 'Hristo',
+    lastName: 'Stoichkov',
+    email: 'email@email.com',
+    companyName: 'Kamata',
+    idNumber: '123456789',
+    phoneNumber: '01234567',
+    role: 'employer',
+    createdAt: new Date(),
+    myJobPosts: [{ id: '10', ownerId: '2' }],
   },
 ];
