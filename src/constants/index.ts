@@ -258,7 +258,7 @@ export const USERS: User[] = [
     id: '1',
     fistName: 'Maya',
     lastName: 'Magapasa',
-    email: 'email@EmailValidator.com',
+    email: 'email@email.com',
     companyName: '',
     idNumber: '',
     phoneNumber: '',

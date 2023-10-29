@@ -1,6 +1,6 @@
 <section class="login-container">
     <h1 class="login-title">Login</h1>
-    <form [formGroup]="loginForm" class="login-form">
+    <form [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()">
 
         <div class="input-form-list">
             <input class="form-input" id="email" type="email" placeholder="Email" required="true"
@@ -18,7 +18,7 @@
             cursor: pointer;
             font-size: 20px;
             border: none;
-            outline: none" (btnOnClick)="onLogin()"></app-button>
+            outline: none"></app-button>
         </div>
         
     </form>

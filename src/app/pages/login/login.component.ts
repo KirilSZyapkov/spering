@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { UseLocalStorageService } from 'src/app/service/use-local-storage.service';
-import { USERS } from 'src/constants';
+import { UserContextService } from 'src/app/context/user-context.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,21 +14,14 @@ export class LoginComponent {
     password: new FormControl(''),
   });
 
-  constructor(private localStorage: UseLocalStorageService) {}
+  constructor(private userContext: UserContextService, private router: Router) {}
 
-  onLogin(): void {
+  onSubmit(): void {
     const { email, password } = this.loginForm.controls;
-    console.log(USERS);
-    try {
-      if(email.value === "" || password.value === ""){
-        throw new Error("All fields are required!")
-      }
-      const user = USERS.find((f) => Number(f.password) === Number(password.value));
-      console.log(user);
-      
-    } catch (error) {
-      alert(error.message);
-    }
     
+    this.userContext.loading({email, password});
+    this.router.navigate(["/"]);
+    console.log("hi");
+        
   }
 }
