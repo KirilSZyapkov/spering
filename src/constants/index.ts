@@ -264,6 +264,7 @@ export const USERS: User[] = [
     phoneNumber: '',
     role: 'jobseeker',
     createdAt: new Date(),
+    password: "12345"
   },
   {
     id: '2',
@@ -276,5 +277,6 @@ export const USERS: User[] = [
     role: 'employer',
     createdAt: new Date(),
     myJobPosts: [{ id: '10', ownerId: '2' }],
+    password: "54321"
   },
 ];

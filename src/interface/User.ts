@@ -11,5 +11,6 @@ export interface User {
     myJobPosts?:[
         {id: string,
         ownerId: string}
-    ]
+    ],
+    password: string
 }
