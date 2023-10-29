@@ -9,13 +9,4 @@ import { User } from 'src/interface/User';
 })
 export class AppComponent {
   title = 'hiering';
-  user: User;
-
-  constructor(private localStorage: UseLocalStorageService) {}
-
-  ngOnInit(): void {
-    this.user = this.localStorage.useLocalStorage();
-    console.log(this.user);
-    
-  }
 }

@@ -10,7 +10,7 @@ import { USERS } from 'src/constants';
 export class UserContextService {
   constructor(private localStorage: UseLocalStorageService) {}
   value = new BehaviorSubject<User>(this.localStorage.useLocalStorage());
-  // user = this.value.value || {};
+  user = this.value.value;
 
   loading({ email, password }) {
     try {
@@ -32,4 +32,6 @@ export class UserContextService {
   }
 
   registration() {}
+
+  logout(){}
 }

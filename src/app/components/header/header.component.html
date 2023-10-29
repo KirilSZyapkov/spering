@@ -9,10 +9,10 @@
     </div>
     <div class="header-user-section">
         <div class="user-link" [ngStyle]="{'transform': translateX }">
-            <a routerLink="/login">Login</a>
-            <a routerLink="/registration">Registration</a>
-            <a routerLink="">Logout</a>
-            <a routerLink="/user/1">Profile</a>
+            <a *ngIf="profile.id === undefined" routerLink="/login">Login</a>
+            <a *ngIf="profile.id === undefined" routerLink="/registration">Registration</a>
+            <a *ngIf="profile.id !== undefined" routerLink="">Logout</a>
+            <a *ngIf="profile.id !== undefined" routerLink="/user/{{profile.id}}">Profile</a>
         </div>
 
 
