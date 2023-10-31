@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserContextService } from 'src/app/context/user-context.service';
+import { UseLocalStorageService } from 'src/app/service/use-local-storage.service';
 import { User } from 'src/interface/User';
 
 @Component({
@@ -13,11 +14,13 @@ export class HeaderComponent {
   isClose:boolean = false;
   profile: User;
 
-  constructor(private userContext: UserContextService){
+  constructor(private userContext: UserContextService, private useLocalStorage: UseLocalStorageService){
     this.userContext.value.subscribe(value => this.profile = value);
-    
   }
 
+  logout():void{
+    this.useLocalStorage.clearLocalStorage();
+  }
   showLinks(){
     this.translateX = "translateX(0px)";
     this.isOpen = false;

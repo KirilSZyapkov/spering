@@ -13,25 +13,29 @@ export class UserContextService {
   user = this.value.value;
 
   loading({ email, password }) {
-    try {
-      if (email.value === '' || password.value === '') {
-        throw new Error('All fields are requered!');
+    if (email.value === '' || password.value === '') {
+      throw new Error('All fields are requered!');
+    }
+    const profile = USERS.find((u) => {
+      if (
+        u.email === email.value &&
+        Number(u.password) === Number(password.value)
+      ) {
+        return u;
       }
-      const profile = USERS.find((u) => {
-        if (  u.email === email.value &&   Number(u.password) === Number(password.value)   ){
-          return u;
-        } else {
-          throw new Error('Invalid data!');
-        }
-      });
+    });
+    if (profile) {
       this.localStorage.useLocalStorage(profile);
       this.value.next(profile);
-    } catch (error) {
-      alert(error.message);
+    } else {
+      throw new Error('Invalid data!');
     }
   }
 
   registration() {}
 
-  logout(){}
+  logout(): void {
+    this.localStorage.useLocalStorage();
+    this.value.next(this.localStorage.useLocalStorage());
+  }
 }

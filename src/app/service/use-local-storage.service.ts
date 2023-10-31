@@ -21,5 +21,8 @@ export class UseLocalStorageService {
     }
   }
 
+  public clearLocalStorage(){
+    localStorage.removeItem('user');
+  }
 
 }

@@ -19,9 +19,14 @@ export class LoginComponent {
   onSubmit(): void {
     const { email, password } = this.loginForm.controls;
     
-    this.userContext.loading({email, password});
-    this.router.navigate(["/"]);
-    console.log("hi");
+    try {
+      this.userContext.loading({email, password});
+      this.router.navigate(["/"]);
+      console.log("hi");
+      
+    } catch (error) {
+      alert(error.message);
+    }
         
   }
 }

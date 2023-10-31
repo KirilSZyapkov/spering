@@ -11,7 +11,7 @@
         <div class="user-link" [ngStyle]="{'transform': translateX }">
             <a *ngIf="profile.id === undefined" routerLink="/login">Login</a>
             <a *ngIf="profile.id === undefined" routerLink="/registration">Registration</a>
-            <a *ngIf="profile.id !== undefined" routerLink="">Logout</a>
+            <a *ngIf="profile.id !== undefined" routerLink="" (click)="logout()">Logout</a>
             <a *ngIf="profile.id !== undefined" routerLink="/user/{{profile.id}}">Profile</a>
         </div>
 
