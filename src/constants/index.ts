@@ -256,7 +256,7 @@ export const JOBS_POSTS: Job[] = [
 export const USERS: User[] = [
   {
     id: '1_jobseeker',
-    fistName: 'Maya',
+    firstName: 'Maya',
     lastName: 'Magapasa',
     email: 'email@email.com',
     companyName: '',
@@ -268,7 +268,7 @@ export const USERS: User[] = [
   },
   {
     id: '2_employer',
-    fistName: 'Hristo',
+    firstName: 'Hristo',
     lastName: 'Stoichkov',
     email: 'email@email.com',
     companyName: 'Kamata',
