@@ -34,8 +34,8 @@ export class UserContextService {
 
   registration() {}
 
-  logout(): void {
-    this.localStorage.useLocalStorage();
-    this.value.next(this.localStorage.useLocalStorage());
+  logout() {
+    const profile = this.localStorage.useLocalStorage({});
+    this.value.next(profile);
   }
 }

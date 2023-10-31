@@ -6,7 +6,7 @@ import { User } from 'src/interface/User';
 })
 export class UseLocalStorageService {
   constructor() {}
-  public useLocalStorage(value?: User) {
+  public useLocalStorage(value?: any) {
     const jsonData: string | null = localStorage.getItem('user');
 
     if (jsonData == null) {
@@ -19,10 +19,6 @@ export class UseLocalStorageService {
       );
       return value || JSON.parse(jsonData);
     }
-  }
-
-  public clearLocalStorage(){
-    localStorage.removeItem('user');
   }
 
 }

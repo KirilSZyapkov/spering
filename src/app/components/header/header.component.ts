@@ -19,8 +19,9 @@ export class HeaderComponent {
   }
 
   logout():void{
-    this.useLocalStorage.clearLocalStorage();
+    this.userContext.logout();
   }
+
   showLinks(){
     this.translateX = "translateX(0px)";
     this.isOpen = false;
