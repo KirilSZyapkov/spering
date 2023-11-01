@@ -32,7 +32,9 @@ export class UserContextService {
     }
   }
 
-  registration() {}
+  registration(data: User): void {
+
+  }
 
   logout() {
     const profile = this.localStorage.useLocalStorage({});

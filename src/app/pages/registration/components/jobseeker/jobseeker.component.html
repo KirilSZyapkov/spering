@@ -1,6 +1,6 @@
 <app-button title="<-Back" type="button" variant="background: none; text-decoration: underline; color: blue; outline: none; cursor: pointer; border: none;
     font-size: 20px" (btnOnClick)="onSetBack()"></app-button>
-<form [formGroup]="jobseekerForm" class="jobseeker-form">
+<form [formGroup]="jobseekerForm" class="jobseeker-form" (ngSubmit)="onSubmit()">
 
     <div class="input-form-list">
 
@@ -47,6 +47,6 @@
         cursor: pointer;
         font-size: 20px;
         border: none;
-        outline: none" (btnOnClick)="onRegistrate()"></app-button>
+        outline: none"></app-button>
     </div>
 </form>

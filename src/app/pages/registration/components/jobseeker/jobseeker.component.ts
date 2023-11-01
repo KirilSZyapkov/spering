@@ -26,7 +26,18 @@ export class JobseekerComponent {
     this.onJobseekerBack.emit(this.jobseeker);
   }
 
-  onRegistrate(): void {
+  onSubmit(): void {
+    // id=Math.floor(Math.random()*10000000000).toString(36)
+    const {
+      firstName,
+      lastName,
+      email,
+      password,
+      rePassword,
+      age,
+      termOfUse,
+      personalData,
+    } = this.jobseekerForm.controls;
     console.log('hi');
   }
 }
