@@ -10,7 +10,6 @@ import { User } from 'src/interface/User';
 export class HeaderComponent implements OnInit {
   translateX: string = 'translateX(1350px)';
   isOpen: boolean = true;
-  isClose: boolean = false;
   profile: User | null = null;
 
   constructor(private userContext: UserContextService) {}
@@ -26,12 +25,10 @@ export class HeaderComponent implements OnInit {
   showLinks() {
     this.translateX = 'translateX(0px)';
     this.isOpen = false;
-    this.isClose = true;
   }
 
   hideLinks() {
     this.translateX = 'translateX(1350px)';
     this.isOpen = true;
-    this.isClose = false;
   }
 }
