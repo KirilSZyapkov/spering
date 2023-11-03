@@ -9,15 +9,29 @@
     </div>
     <div class="header-user-section">
         <div class="user-link" [ngStyle]="{'transform': translateX }">
-            <a *ngIf="profile.id === undefined" routerLink="/login">Login</a>
-            <a *ngIf="profile.id === undefined" routerLink="/registration">Registration</a>
-            <a *ngIf="profile.id !== undefined" routerLink="" (click)="logout()">Logout</a>
-            <a *ngIf="profile.id !== undefined" routerLink="/user/{{profile.id}}">{{profile.firstName}}</a>
+            <div class="user-link-wraper" *ngIf="profile === null; else user">
+
+                <a routerLink="/login">Login</a>
+                <a routerLink="/registration">Registration</a>
+            </div>
+            <ng-template #user>
+
+                <a routerLink="" (click)="logout()">Logout</a>
+                <a routerLink="/user/{{profile.id}}">{{profile.firstName}}</a>
+            </ng-template>
         </div>
 
 
     </div>
-    <div *ngIf="isOpen" (click)="showLinks()" class="hamburger-menu"><i class="uil uil-bars"></i></div>
-    <div *ngIf="isClose" (click)="hideLinks()" class="btn-close"><div>&times;</div></div>
+    <div *ngIf="isOpen; else close" (click)="showLinks()" class="hamburger-menu"><i class="uil uil-bars"></i></div>
+    <ng-template #close>
+
+        <div (click)="hideLinks()" class="btn-close">
+
+            <div>&times;</div>
+        </div>
+    </ng-template>
 
 </header>
+
+<!-- *ngIf="isClose" -->

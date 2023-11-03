@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { UserContextService } from 'src/app/context/user-context.service';
 
 @Component({
   selector: 'app-jobseeker',
@@ -7,6 +8,9 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./jobseeker.component.css'],
 })
 export class JobseekerComponent {
+
+  constructor(private useContext: UserContextService){}
+
   jobseekerForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
@@ -38,6 +42,18 @@ export class JobseekerComponent {
       termOfUse,
       personalData,
     } = this.jobseekerForm.controls;
+    try {
+      const data = {
+        id: Math.floor(Math.random()*10000000000).toString(36),
+        firstName: firstName.value,
+        lastName,
+        email,
+
+      }
+      this.useContext.registration
+    } catch (error) {
+      
+    }
     console.log('hi');
   }
 }
