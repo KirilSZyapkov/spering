@@ -12,5 +12,6 @@ export interface User {
         {id: string,
         ownerId: string}
     ],
-    password: string
+    password: string,
+    rePassword?: string
 }

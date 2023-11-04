@@ -33,7 +33,26 @@ export class UserContextService {
   }
 
   registration(newUser: User): void {
+    if (
+      newUser.email === '' ||
+      newUser.firstName === '' ||
+      newUser.lastName === '' ||
+      newUser.password === ''
+    ) {
+      throw new Error('All fields are requered!');
+    } else if (newUser.password !== newUser.rePassword) {
+      throw new Error("Passwords don't match!");
+    } else {
+      const isExisting = USERS.find((u) => u.email === newUser.email);
 
+      if (isExisting !== undefined) {
+        throw new Error('User already exist!');
+      } else {
+        USERS.push(newUser);
+        this.localStorage.useLocalStorage(newUser);
+        this.value.next(newUser);
+      }
+    }
   }
 
   logout() {

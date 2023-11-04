@@ -14,19 +14,19 @@ export class LoginComponent {
     password: new FormControl(''),
   });
 
-  constructor(private userContext: UserContextService, private router: Router) {}
+  constructor(
+    private userContext: UserContextService,
+    private router: Router
+  ) {}
 
   onSubmit(): void {
     const { email, password } = this.loginForm.controls;
-    
+
     try {
-      this.userContext.loading({email, password});
-      this.router.navigate(["/"]);
-      console.log("hi");
-      
+      this.userContext.loading({ email, password });
+      this.router.navigate(['/']);
     } catch (error) {
       alert(error.message);
     }
-        
   }
 }
