@@ -1,6 +1,6 @@
 <app-button title="<-Back" type="button" variant="background: none; text-decoration: underline; color: blue; outline: none; cursor: pointer; border: none;
     font-size: 20px" (btnOnClick)="onSetBack()"></app-button>
-<form [formGroup]="employerForm" class="jobseeker-form">
+<form [formGroup]="employerForm" class="jobseeker-form" (ngSubmit)="onSubmit()">
 
     <div class="input-form-list">
 
@@ -37,15 +37,15 @@
     <div class="checkbox-form-list">
 
         <div class="checkbox-form">
-            <input id="age" name="age" type="checkbox" />
+            <input id="age" name="age" type="checkbox" [(ngModel)]="isAgeChecked" [ngModelOptions]="{standalone: true}" />
             <label for="age">I delcare, I am at least 18 years old. *</label>
         </div>
         <div class="checkbox-form">
-            <input id="turmOfUse" name="turmOfUse" type="checkbox" />
+            <input id="turmOfUse" name="turmOfUse" type="checkbox" [(ngModel)]="isTermOfUseChecked" [ngModelOptions]="{standalone: true}" />
             <label for="turmOfUse">I have read and agree with <span class="text-span"> Terms of Use</span> *</label>
         </div>
         <div class="checkbox-form">
-            <input id="personalData" name="personalData" type="checkbox" />
+            <input id="personalData" name="personalData" type="checkbox" [(ngModel)]="isPersonalDataChecked" [ngModelOptions]="{standalone: true}"/>
             <label for="personalData">I have read and agree with <span class="text-span"> Personal data</span> *</label>
         </div>
     </div>
@@ -58,6 +58,6 @@
         cursor: pointer;
         font-size: 20px;
         border: none;
-        outline: none" (btnOnClick)="onRegistrate()"></app-button>
+        outline: none"></app-button>
     </div>
 </form>
