@@ -8,6 +8,9 @@ import { UserContextService } from 'src/app/context/user-context.service';
   styleUrls: ['./jobseeker.component.css'],
 })
 export class JobseekerComponent {
+  isPersonalDataChecked: boolean = false;
+  isAgeChecked: boolean = false;
+  isTermOfUseChecked: boolean = false;
 
   constructor(private useContext: UserContextService){}
 
@@ -17,9 +20,6 @@ export class JobseekerComponent {
     email: new FormControl(''),
     password: new FormControl(''),
     rePassword: new FormControl(''),
-    age: new FormControl(''),
-    termOfUse: new FormControl(''),
-    personalData: new FormControl(''),
   });
 
   @Input() jobseeker: boolean;
@@ -38,19 +38,31 @@ export class JobseekerComponent {
       email,
       password,
       rePassword,
-      age,
-      termOfUse,
-      personalData,
     } = this.jobseekerForm.controls;
     try {
-      const data = {
+      const newUser = {
         id: Math.floor(Math.random()*10000000000).toString(36),
         firstName: firstName.value,
-        lastName,
-        email,
+        lastName: lastName.value,
+        email: email.value,
+        password: password.value,
+        rePassword: rePassword.value,
+        age: this.isAgeChecked,
+        termOfUse: this.isTermOfUseChecked,
+        personalData: this.isPersonalDataChecked,
+        role: "jobseeker",
+        createdAt: new Date(),
+        
 
       }
-      this.useContext.registration
+      
+      
+      console.log(this.isPersonalDataChecked);
+      console.log(this.isAgeChecked);
+      console.log(this.isTermOfUseChecked);
+      console.log(newUser);
+      
+      // this.useContext.registration();
     } catch (error) {
       
     }

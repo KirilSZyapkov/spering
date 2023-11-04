@@ -9,7 +9,7 @@
     </div>
     <div class="header-user-section">
         <div class="user-link" [ngStyle]="{'transform': translateX }">
-            <div class="user-link-wraper" *ngIf="profile === null; else user">
+            <div class="user-link-wraper" *ngIf="(profile === null || profile.id === undefined); else user">
 
                 <a routerLink="/login">Login</a>
                 <a routerLink="/registration">Registration</a>

@@ -1,21 +1,24 @@
 <section class="registration-container">
     <h1 class="registration-title">Registration</h1>
     <article *ngIf="registration" class="registration-card-container">
-        <div class="card" (click)="onClickJobseeker()">
+        <div class="card">
             <i class="uil uil-estate"></i>
             <h2 class="card-title">Registration for Jobseeker</h2>
-            <p class="card-description">By registering, you will gain access to all JobTigers services for job seekers. JobTigers services for
+            <p class="card-description">By registering, you will gain access to all JobTigers services for job seekers.
+                JobTigers services for
                 jobseekers are free of charge.</p>
-            <div class="btn">Select</div>
+            <div class="btn" (click)="onClickJobseeker()">Select</div>
         </div>
         <div class="card">
             <i class="uil uil-bag"></i>
             <h2 class="card-title">Registration of Employer</h2>
-            <p class="card-description">By registering you will gain access to JobTigers section For Employers and all services JobTiger offers
+            <p class="card-description">By registering you will gain access to JobTigers section For Employers and all
+                services JobTiger offers
                 for employers. The registration is free of charge.</p>
             <div class="btn" (click)="onClickEmployer()">Select</div>
         </div>
     </article>
     <app-employer *ngIf="employer" [employer]="employer" (onEmployerBack)="backFromEmployer($event)"></app-employer>
-    <app-jobseeker *ngIf="jobseeker" [jobseeker]="jobseeker" (onJobseekerBack)="backFromJobseeker($event)"></app-jobseeker>
+    <app-jobseeker *ngIf="jobseeker" [jobseeker]="jobseeker"
+        (onJobseekerBack)="backFromJobseeker($event)"></app-jobseeker>
 </section>

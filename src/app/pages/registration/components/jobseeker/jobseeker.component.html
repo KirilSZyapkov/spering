@@ -26,15 +26,15 @@
     <div class="checkbox-form-list">
 
         <div class="checkbox-form">
-            <input id="age" name="age" type="checkbox" />
+            <input id="age" name="age" type="checkbox" [(ngModel)]="isAgeChecked" [ngModelOptions]="{standalone: true}"/>
             <label for="age">I delcare, I am at least 18 years old. *</label>
         </div>
         <div class="checkbox-form">
-            <input id="turmOfUse" name="turmOfUse" type="checkbox" />
+            <input id="turmOfUse" name="turmOfUse" type="checkbox" [(ngModel)]="isTermOfUseChecked" [ngModelOptions]="{standalone: true}" />
             <label for="turmOfUse">I have read and agree with <span class="text-span"> Terms of Use</span> *</label>
         </div>
         <div class="checkbox-form">
-            <input id="personalData" name="personalData" type="checkbox" />
+            <input id="personalData" name="personalData" type="checkbox" [(ngModel)]="isPersonalDataChecked" [ngModelOptions]="{standalone: true}"/>
             <label for="personalData">I have read and agree with <span class="text-span"> Personal data</span> *</label>
         </div>
     </div>

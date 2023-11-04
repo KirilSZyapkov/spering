@@ -32,7 +32,7 @@ export class UserContextService {
     }
   }
 
-  registration(data: User): void {
+  registration(newUser: User): void {
 
   }
 
