@@ -1,7 +1,8 @@
 .my-profile-container{
-    border: 1px solid red;
+    
     display: flex;
 padding: 25px 0px;
+gap: 50px;
 }
 
 .profile-avatar{
@@ -23,9 +24,12 @@ padding: 25px 0px;
 }
 
 .personal-date-container{
-    border: 1px solid green;
     width: 100%;
     
+}
+
+.personal-title{
+    margin-bottom: 15px;
 }
 
 .date-grid{
@@ -37,4 +41,5 @@ padding: 25px 0px;
 .card{
     border: 1px solid black;
     border-radius: 10px;
+    padding: 0 15px;
 }

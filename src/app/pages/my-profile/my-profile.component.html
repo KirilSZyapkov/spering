@@ -6,7 +6,7 @@
         
     </div>
     <div class="personal-date-container">
-        <h3>Personal date</h3>
+        <h3 class="personal-title">Personal date</h3>
         <div class="date-grid">
             <div class="card">
                 <h4>First Name</h4>
@@ -23,6 +23,14 @@
             <div *ngIf="myProfile.phoneNumber !== ''" class="card">
                 <h4>Phone number</h4>
                 <p>{{myProfile.phoneNumber}}</p>
+            </div>
+            <div *ngIf="myProfile.companyName !== ''" class="card">
+                <h4>Company</h4>
+                <p>{{myProfile.companyName}}</p>
+            </div>
+            <div class="card">
+                <h4>Title</h4>
+                <p>{{myProfile.role}}</p>
             </div>
         </div>
     </div>
