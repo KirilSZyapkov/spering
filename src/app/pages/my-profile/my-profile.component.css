@@ -1,13 +1,14 @@
 .my-profile-container{
     border: 1px solid red;
     display: flex;
-
+padding: 25px 0px;
 }
 
 .profile-avatar{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .uil{
@@ -17,14 +18,14 @@
 
 .avatar-title{
     margin: 0;
-    margin-top: -60px;
+    /* margin-top: -60px; */
     font-size: 25px;
 }
 
 .personal-date-container{
     border: 1px solid green;
     width: 100%;
-    margin-left: 25px;
+    
 }
 
 .date-grid{
