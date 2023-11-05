@@ -1,0 +1,39 @@
+.my-profile-container{
+    border: 1px solid red;
+    display: flex;
+
+}
+
+.profile-avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uil{
+    font-size: 225px;
+    
+}
+
+.avatar-title{
+    margin: 0;
+    margin-top: -60px;
+    font-size: 25px;
+}
+
+.personal-date-container{
+    border: 1px solid green;
+    width: 100%;
+    margin-left: 25px;
+}
+
+.date-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 25px;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+}

@@ -1,9 +1,29 @@
 <section class="my-profile-container">
-<div>
-    <i class="uil uil-user-circle"></i>
-    <div>
-        <h3>{{myProfile.firstName}} {{myProfile.lastName}}</h3>
+    <div class="profile-avatar">
+        <i class="uil uil-user-circle"></i>
+        
+            <h3 class="avatar-title">{{myProfile.firstName}} {{myProfile.lastName}}</h3>
+        
     </div>
-</div>
-<div></div>
+    <div class="personal-date-container">
+        <h3>Personal date</h3>
+        <div class="date-grid">
+            <div class="card">
+                <h4>First Name</h4>
+                <p>{{myProfile.firstName}}</p>
+            </div>
+            <div class="card">
+                <h4>Last Name</h4>
+                <p>{{myProfile.lastName}}</p>
+            </div>
+            <div class="card">
+                <h4>Email</h4>
+                <p>{{myProfile.email}}</p>
+            </div>
+            <div *ngIf="myProfile.phoneNumber !== ''" class="card">
+                <h4>Phone number</h4>
+                <p>{{myProfile.phoneNumber}}</p>
+            </div>
+        </div>
+    </div>
 </section>
