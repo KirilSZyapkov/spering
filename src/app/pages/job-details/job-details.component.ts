@@ -18,7 +18,5 @@ export class JobDetailsComponent implements OnInit {
     this.jobDetail = JOBS_POSTS.find(j => j.id === Number(this.id));
     console.log(this.jobDetail);
     
-    console.log(this.id);
-    
   }
 }
