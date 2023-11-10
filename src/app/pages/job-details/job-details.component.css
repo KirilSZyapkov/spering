@@ -4,6 +4,13 @@
     flex-wrap: wrap;
 }
 
+.h{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0) 11%, rgba(0, 0, 0, 0.53));
+    display: flex;
+    justify-content: space-between;
+}
+
 .wrapper{
     max-width: 1000px;
 }
