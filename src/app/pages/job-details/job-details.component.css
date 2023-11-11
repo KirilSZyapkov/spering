@@ -14,3 +14,29 @@
 .wrapper{
     max-width: 1000px;
 }
+
+.logo-box{
+    position: absolute;
+    bottom: -128px;
+    right: 0;
+    width: 256px;
+    height: 256px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #c4c4c4;
+}
+
+.logo-wrapper{
+   background-color: white;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px; 
+}
+
+/* .logo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */

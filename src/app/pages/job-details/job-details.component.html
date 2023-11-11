@@ -2,14 +2,16 @@
     <header class="h">
         <h2>{{jobDetail.posted_from}}</h2>
         <div class="logo-box">
-            <img src="{{jobDetail.logoUrl}}" alt="logo" />
+            <div class="logo-wrapper">
+                <img class="logo-img" src="{{jobDetail.logoUrl}}" alt="logo" />
+            </div>
         </div>
     </header>
     <div class="article-container">
         <article class="wrapper">
             <h2>{{jobDetail.title}}</h2>
 
-            <div>
+            <div *ngIf="jobDetail.about_us.length !== 0">
                 <h2>For us</h2>
                 <p>{{jobDetail.about_us}}</p>
             </div>
