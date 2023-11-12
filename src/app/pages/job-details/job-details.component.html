@@ -29,13 +29,14 @@
             </div>
         </article>
         <aside class="side-container">
-            <p>{{jobDetail.location}}</p>
-            <p>{{jobDetail.work}}</p>
-            <p>{{jobDetail.deadLine}}</p>
-            <p>{{jobDetail.salary}}</p>
-            <p>{{jobDetail.schedule}}</p>
-            <p>{{jobDetail.suitable_for}}</p>
-            <p>{{jobDetail.experience}}</p>
+            <p class="side-title">{{jobDetail.posted_at}} - {{jobDetail.title}}</p>
+            <p> <i class="uil uil-map-marker"></i>{{jobDetail.location}}</p>
+            <p><i class="uil uil-suitcase"></i>{{jobDetail.work}}</p>
+            <p> {{jobDetail.deadLine}}</p>
+            <p><i class="uil uil-usd-circle"></i> {{jobDetail.salary}}</p>
+            <p><i class="uil uil-clock-five"></i> {{jobDetail.schedule}}</p>
+            <p><i class="uil uil-arrow-growth"></i>{{jobDetail.suitable_for}}</p>
+            <p> <i class="uil uil-head-side"></i>{{jobDetail.experience}}</p>
 
         </aside>
     </div>
