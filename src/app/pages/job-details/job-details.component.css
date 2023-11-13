@@ -44,6 +44,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    gap: 18px;
     right: 0;
     top: 228px;
     width: 300px;
@@ -54,7 +55,26 @@
 .side-container > p{
     margin: 0;
 }
+.title {
+    word-break: break-all;
+}
 
+.side-text{
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 19px;
+    line-height: 1;
+    letter-spacing: normal;
+    white-space: nowrap;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.uil{
+    font-size: 25px;
+    color: black;
+    margin-right: 16px;
+}
 /* .logo-img{
     width: 100%;
     height: 100%;
