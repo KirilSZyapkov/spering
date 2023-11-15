@@ -84,6 +84,11 @@
   align-items: center;
 }
 
+.title{
+  overflow-wrap: anywhere;
+  white-space: break-spaces;
+}
+
 .uil {
   font-size: 25px;
   color: black;
