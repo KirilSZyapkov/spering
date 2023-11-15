@@ -1,4 +1,4 @@
-<section>
+<section class="details">
     <header class="h">
         <h2 class="h-logo-title">{{jobDetail.posted_from}}</h2>
         <div class="logo-box">
@@ -9,34 +9,35 @@
     </header>
     <div class="article-container">
         <article class="wrapper">
-            <h2 class="headlin">{{jobDetail.title}}</h2>
+            <h2>{{jobDetail.title}}</h2>
 
-            <div *ngIf="jobDetail.about_us.length !== 0">
+            <div class="job-detail-wrapper" *ngIf="jobDetail.about_us.length !== 0">
                 <h2 class="headlin">For us</h2>
-                <p>{{jobDetail.about_us}}</p>
+                <p class="job-details">{{jobDetail.about_us}}</p>
             </div>
-            <div>
+            <div class="job-detail-wrapper">
                 <h2 class="headlin">Responsibilities</h2>
-                <p>{{jobDetail.responsibilities}}</p>
+                <p class="job-details">{{jobDetail.responsibilities}}</p>
             </div>
-            <div>
+            <div class="job-detail-wrapper">
                 <h2 class="headlin">Requirements and necessary skills</h2>
-                <p>{{jobDetail.necessary_sklils}}</p>
+                <p class="job-details">{{jobDetail.necessary_sklils}}</p>
             </div>
-            <div>
+            <div class="job-detail-wrapper">
                 <h2 class="headlin">We offer</h2>
-                <p>{{jobDetail.we_offer}}</p>
+                <p class="job-details">{{jobDetail.we_offer}}</p>
             </div>
         </article>
         <aside class="side-container">
-            <p class="side-text title"><span>{{jobDetail.posted_at}} - {{jobDetail.title}}</span></p>
+            <p class="side-text title">{{jobDetail.posted_at}}</p>
+            <p class="title side-text">{{jobDetail.title}}</p>
             <p class="side-text"> <i class="uil uil-map-marker"></i>{{jobDetail.location}}</p>
             <p class="side-text"><i class="uil uil-suitcase"></i>{{jobDetail.work}}</p>
             <p class="side-text"><i class="uil uil-usd-circle"></i> {{jobDetail.salary}}</p>
             <p class="side-text"><i class="uil uil-clock-five"></i> {{jobDetail.schedule}}</p>
             <p class="side-text"><i class="uil uil-arrow-growth"></i>{{jobDetail.suitable_for}}</p>
             <p class="side-text"> <i class="uil uil-head-side"></i>{{jobDetail.experience}}</p>
-            <p class="side-text deadline"><span>Deadline</span> - {{jobDetail.deadLine}}</p>
+            <p class="side-text deadline">Deadline - {{jobDetail.deadLine}}</p>
 
         </aside>
     </div>

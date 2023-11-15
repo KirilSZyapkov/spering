@@ -1,3 +1,6 @@
+.details{
+  margin-bottom: 25px;
+}
 .article-container {
   position: relative;
   display: flex;
@@ -53,7 +56,7 @@
 }
 
 .side-container {
-  border: 1px solid red;
+  border: 3px solid lightgray;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -65,11 +68,9 @@
   border-radius: 20px;
 }
 
+
 .side-container > p {
   margin: 0;
-}
-.title {
-  word-break: break-all;
 }
 
 .side-text {
@@ -88,8 +89,18 @@
   color: black;
   margin-right: 16px;
 }
-/* .logo-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
+
+.headlin{
+  margin: 0;
+  color: #1cbbb4;
+}
+
+.job-details{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(25, 25, 25, 0.8);
+}
+.job-detail-wrapper{
+  margin: 0;
+  margin-top: 35px;
+}
