@@ -1,6 +1,6 @@
 <section class="wrapper">
     <h3 class="post-job-title">Post a job</h3>
-    <form [formGroup]="postJobForm" class="form-container">
+    <form [formGroup]="postJobForm" class="form-container" (ngSubmit)="onSubmit()">
 
         <label class="form-label" for="jobTitle">Job title</label>
         <input class="form-input" type="text" placeholder="Job title" name="jobTitle" />

@@ -27,4 +27,8 @@ export class PostJobComponent {
   });
 
   constructor(private useContext: UserContextService, private router: Router){}
+
+  onSubmit(): void{
+    alert('hi');
+  }
 }
