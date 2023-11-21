@@ -1,0 +1,29 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 80px;
+}
+
+.post-job-title {
+  text-align: center;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 15px;
+  
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  outline: none;
+}
+
+.btn-wrapper{
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}

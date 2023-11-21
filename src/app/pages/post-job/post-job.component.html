@@ -1,61 +1,73 @@
 <section class="wrapper">
-    <h3>Post a job</h3>
-    <form>
-        <div>
-            <label for="jobTitle">Job title</label>
-            <input type="text" placeholder="Job title" name="jobTitle"/>
-        </div>
-        <div>
-            <label for="responsibilities">Responsibilities</label>
-            <textarea type="text" placeholder="Responsibilities" name="responsibilities"></textarea>
-        </div>
-        <div>
-            <label for="forUs">For Us</label>
-            <textarea type="text" placeholder="For Us" name="forUs"></textarea>
-        </div>
-        <div>
-            <label for="location">Town</label>
-            <input type="text" placeholder="Town" name="location"/>
-        </div>
-        <div>
-            <label for="weOffer">We offer</label>
-            <textarea type="text" placeholder="We offer" name="weOffer"></textarea>
-        </div>
-        <div>
-            <label for="necessarySkills">Necessary Skills</label>
-            <textarea type="text" placeholder="Necessary Skills" name="necessarySkills"></textarea>
-        </div>
-        <div>
-            <label for="contactInformation">Contact Information</label>
-            <textarea type="text" placeholder="Contact Information" name="contactInformation"></textarea>
-        </div>
-        <div>
-            <label for="deadLine">Dead Line</label>
-            <input type="date" placeholder="Dead Line" name="deadLine"/>
-        </div>
-        <div>
-            <label for="work">Work</label>
-            <input type="text" placeholder="Add type of work" name="work"/>
-        </div>
-        <div>
-            <label for="schedule">Schedule</label>
-            <input type="text" placeholder="Add Schedule" name="schedule"/>
-        </div>
-        <div>
-            <label for="suitableFor">Suitable For</label>
-            <input type="text" placeholder="Suitable For" name="suitableFor"/>
-        </div>
-        <div>
-            <label for="experience">Experience</label>
-            <input type="text" placeholder="Experience" name="experience"/>
-        </div>
-        <div>
-            <label for="salary">Salary</label>
-            <input type="number" placeholder="Add salary" name="salary"/>
-        </div>
-        <div>
-            <label for="logoUrl">Logo</label>
-            <input type="text" placeholder="Add logo url" name="logoUrl"/>
+    <h3 class="post-job-title">Post a job</h3>
+    <form [formGroup]="postJobForm" class="form-container">
+
+        <label class="form-label" for="jobTitle">Job title</label>
+        <input class="form-input" type="text" placeholder="Job title" name="jobTitle" />
+
+
+        <label class="form-label" for="responsibilities">Responsibilities</label>
+        <textarea class="form-textarea" type="text" placeholder="Responsibilities" name="responsibilities"></textarea>
+
+
+        <label class="form-label" for="forUs">For Us</label>
+        <textarea class="form-textarea" type="text" placeholder="For Us" name="forUs"></textarea>
+
+
+        <label class="form-label" for="location">Town</label>
+        <input class="form-input" type="text" placeholder="Town" name="location" />
+
+
+        <label class="form-label" for="weOffer">We offer</label>
+        <textarea class="form-textarea" type="text" placeholder="We offer" name="weOffer"></textarea>
+
+
+        <label class="form-label" for="necessarySkills">Necessary Skills</label>
+        <textarea class="form-textarea" type="text" placeholder="Necessary Skills" name="necessarySkills"></textarea>
+
+
+        <label class="form-label" for="contactInformation">Contact Information</label>
+        <textarea class="form-textarea" type="text" placeholder="Contact Information"
+            name="contactInformation"></textarea>
+
+
+        <label class="form-label" for="deadLine">Dead Line</label>
+        <input class="form-input" type="date" placeholder="Dead Line" name="deadLine" />
+
+
+        <label class="form-label" for="work">Work</label>
+        <input class="form-input" type="text" placeholder="Add type of work" name="work" />
+
+
+        <label class="form-label" for="schedule">Schedule</label>
+        <input class="form-input" type="text" placeholder="Add Schedule" name="schedule" />
+
+
+        <label class="form-label" for="suitableFor">Suitable For</label>
+        <input class="form-input" type="text" placeholder="Suitable For" name="suitableFor" />
+
+
+        <label class="form-label" for="experience">Experience</label>
+        <input class="form-input" type="text" placeholder="Experience" name="experience" />
+
+
+        <label class="form-label" for="salary">Salary</label>
+        <input class="form-input" type="number" placeholder="Add salary" name="salary" />
+
+
+        <label class="form-label" for="logoUrl">Logo</label>
+        <input class="form-input" type="text" placeholder="Add logo url" name="logoUrl" />
+
+        <div class="btn-wrapper">
+            <app-button type="submit" title="Post a job" variant="width: 150px;
+            text-align: center;
+            padding: 5px;
+            background: #1a2e35;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            border: none;
+            outline: none"></app-button>
         </div>
     </form>
 </section>
