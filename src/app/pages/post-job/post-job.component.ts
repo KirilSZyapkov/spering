@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UserContextService } from 'src/app/context/user-context.service';
+import { User } from 'src/interface/User';
+
 
 @Component({
   selector: 'app-post-job',
   templateUrl: './post-job.component.html',
   styleUrls: ['./post-job.component.css'],
 })
-export class PostJobComponent {
+export class PostJobComponent implements OnInit{
   postJobForm = new FormGroup({
     jobTitle: new FormControl(''),
     responsibilities: new FormControl(''),
@@ -25,9 +27,19 @@ export class PostJobComponent {
     salary: new FormControl(''),
     logoUrl: new FormControl(''),
   });
+  user: User | undefined;
 
   constructor(private useContext: UserContextService, private router: Router) {}
+  
+ ngOnInit(): void{
+  this.useContext.value.subscribe((user)=> this.user = user);
+  if(this.user.firstName === undefined){
+    this.router.navigate(["login"]);
+  }
+  console.log();
+ }
 
+  
   onSubmit(): void {
     const {
       jobTitle,
@@ -48,7 +60,6 @@ export class PostJobComponent {
     try {
       const newPost = {};
       alert('hi');
-      
     } catch (error) {
       alert(error.message);
     }
