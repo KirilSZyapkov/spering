@@ -26,9 +26,31 @@ export class PostJobComponent {
     logoUrl: new FormControl(''),
   });
 
-  constructor(private useContext: UserContextService, private router: Router){}
+  constructor(private useContext: UserContextService, private router: Router) {}
 
-  onSubmit(): void{
-    alert('hi');
+  onSubmit(): void {
+    const {
+      jobTitle,
+      responsibilities,
+      forUs,
+      location,
+      weOffer,
+      necessarySkills,
+      contactInformation,
+      deadLine,
+      work,
+      schedule,
+      suitableFor,
+      experience,
+      salary,
+      logoUrl,
+    } = this.postJobForm.controls;
+    try {
+      const newPost = {};
+      alert('hi');
+      
+    } catch (error) {
+      alert(error.message);
+    }
   }
 }
