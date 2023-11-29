@@ -9,6 +9,7 @@ import { CalendarComponent } from './pages/calendar/calendar.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { JobDetailsComponent } from './pages/job-details/job-details.component';
 import { PostJobComponent } from './pages/post-job/post-job.component';
+import { authGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
@@ -41,7 +42,8 @@ const routes: Routes = [
   },
   {
     path: "post-job",
-    component: PostJobComponent
+    component: PostJobComponent,
+    canActivate: [authGuard]
   },
   {
     path: '**',

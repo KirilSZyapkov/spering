@@ -32,19 +32,19 @@ export class PostJobComponent implements OnInit{
   constructor(private useContext: UserContextService, private router: Router) {}
   
  ngOnInit(): void{
-  this.useContext.value.subscribe((user)=> this.user = user);
-  if(this.user.firstName === undefined){
-    alert("You have to login as employer to post a job!");
-    this.router.navigate(["login"]);
-  } else if (this.user.role !== "employer"){
-    if(this.user.firstName === undefined){
-      alert("You must registrate as employer!");
-      this.router.navigate(["registration"]);
-    } else {
-      alert("You must registrate as employer, logout first!");
-      this.router.navigate(["/"]);
-    }
-  }
+  // this.useContext.value.subscribe((user)=> this.user = user);
+  // if(this.user.firstName === undefined){
+  //   alert("You have to login as employer to post a job!");
+  //   this.router.navigate(["login"]);
+  // } else if (this.user.role !== "employer"){
+  //   if(this.user.firstName === undefined){
+  //     alert("You must registrate as employer!");
+  //     this.router.navigate(["registration"]);
+  //   } else {
+  //     alert("You must registrate as employer, logout first!");
+  //     this.router.navigate(["/"]);
+  //   }
+  // }
  }
 
   
