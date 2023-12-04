@@ -4,7 +4,7 @@ import { User } from 'src/interface/User';
 export const JOBS_POSTS: Job[] = [
   {
     id: 1,
-    posted_at: '20.10.2023',
+    posted_at: new Date(),
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
@@ -16,12 +16,7 @@ export const JOBS_POSTS: Job[] = [
     necessary_sklils:
       'Your profile:      - University degree in Economics, Mathematics or related;      - At least 1 year experience in a similar role;      - Highly developed analytical and research skills;      - Knowledge of the principles of corporate finance is a plus;      - Ability to communicate with various stakeholders and to handle multiple information;      - Attention to details; high organization skills, keeping deadlines and ability to work independently;      - Written and oral presentation skills;      - Strong team-oriented behavior;      - Good English - written and verbal;      - Experience in MS Office with advanced level in Excel. ',
     about_us: '',
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information:    "     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '15.12.2023',
     work: 'permanent job',
     schedule: 'full-time',
@@ -31,7 +26,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 2,
-    posted_at: '11.05.2023',
+    posted_at: new Date(),
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
@@ -44,12 +39,7 @@ export const JOBS_POSTS: Job[] = [
       '• Има предишен опит на ниво вносител и/или в сервизна дейност на автомобили (минимум 1 година)      • Притежава диплома за техническа специалност      • Владее отлично английски език (писмено и говоримо)      • Работи с MS Office, специализирани софтуери и уеб базирани платформи      • Е активен шофьор с възможност за посещение на дилърствата в страната (на всеки 2-3 месеца)            Предимство при подбора по документи ще имат кандидати със задълбочени технически познания за автомобили, висше образование и владеене на немски език. ',
     about_us:
       'Силвър Стар Моторс ЕАД е официалният представител и вносител на автомобили с марки Mercedes-Benz, Setra и FUSO, а от 2022г. – и на INEOS Grenadier. В ролята си на такъв, продължаваме с масираната кампания по разширяване на екипите и подобряване качеството на предоставяните услуги в България.      Ако желаете да консултирате и подпомагате сервизната дейност за Mercedes-Benz в страната,            ако сте енергичен, инициативен и работите добре в екип,            ако желаете да имате ежедневен досег с иновациите в автомобилния бранш,            ние Ви очакваме в екипа на Силвър Стар Моторс ЕАД, локация София като:      ОРГАНИЗАТОР, РЕМОНТИ ЗА ЛЕКИ АВТОМОБИЛИ MERCEDES-BENZ ',
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information: "     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '25.06.2023',
     work: 'part time job',
     schedule: '4 hours a fay',
@@ -59,7 +49,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 3,
-    posted_at: '06.03.2023',
+    posted_at: new Date(),
     posted_from: 'Yettel',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
@@ -72,12 +62,7 @@ export const JOBS_POSTS: Job[] = [
       '• Има предишен опит на ниво вносител и/или в сервизна дейност на автомобили (минимум 1 година)      • Притежава диплома за техническа специалност      • Владее отлично английски език (писмено и говоримо)      • Работи с MS Office, специализирани софтуери и уеб базирани платформи      • Е активен шофьор с възможност за посещение на дилърствата в страната (на всеки 2-3 месеца)            Предимство при подбора по документи ще имат кандидати със задълбочени технически познания за автомобили, висше образование и владеене на немски език. ',
     about_us:
       "We are Yettel!      Yettel Bulgaria, part of PPF Telecom Group, is a telecommunications company that connects over 3 million customers to people, devices and businesses. Until March 2022, the company operated on the Bulgarian market as Telenor Bulgaria.            We are a company that wants to discover, develop and invest in technology to serve people in the most useful and effective way for them. At Yettel, we believe that a balanced life is a better life. That's why we do everything we can to help people balance the things that matter to them, to make better choices, especially when it comes to technology and its role in our lives.           We want to create the future together with you. That's why we at Yettel are ready to discover and develop your talent and unique skills as we change the world together.       Role Overview:      The Digital Sales and Marketing team is connecting customers with company's products & services within the digital world. The team is responsible for planning, designing, implementing and maintaining the customer journey and experience across the digital ecosystem.  Currently we are looking for a Digital Platforms Specialist for the Digital Customer Experience team who will be part of the exciting journey of the further development of our digital channels. You would be responsible for creating and constantly improving our award-winning Yettel App and will participate in related company projects.",
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information: "     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '01.04.2023',
     work: 'full time job',
     schedule: '8 hours a fay',
@@ -87,7 +72,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 4,
-    posted_at: '20.10.2023',
+    posted_at: new Date(),
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
@@ -99,12 +84,7 @@ export const JOBS_POSTS: Job[] = [
     necessary_sklils:
       'Your profile:      - University degree in Economics, Mathematics or related;      - At least 1 year experience in a similar role;      - Highly developed analytical and research skills;      - Knowledge of the principles of corporate finance is a plus;      - Ability to communicate with various stakeholders and to handle multiple information;      - Attention to details; high organization skills, keeping deadlines and ability to work independently;      - Written and oral presentation skills;      - Strong team-oriented behavior;      - Good English - written and verbal;      - Experience in MS Office with advanced level in Excel. ',
     about_us: '',
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information: "     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '15.12.2023',
     work: 'permanent job',
     schedule: 'full-time',
@@ -114,7 +94,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 5,
-    posted_at: '11.05.2023',
+    posted_at: new Date(),
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
@@ -127,12 +107,7 @@ export const JOBS_POSTS: Job[] = [
       '• Има предишен опит на ниво вносител и/или в сервизна дейност на автомобили (минимум 1 година)      • Притежава диплома за техническа специалност      • Владее отлично английски език (писмено и говоримо)      • Работи с MS Office, специализирани софтуери и уеб базирани платформи      • Е активен шофьор с възможност за посещение на дилърствата в страната (на всеки 2-3 месеца)            Предимство при подбора по документи ще имат кандидати със задълбочени технически познания за автомобили, висше образование и владеене на немски език. ',
     about_us:
       'Силвър Стар Моторс ЕАД е официалният представител и вносител на автомобили с марки Mercedes-Benz, Setra и FUSO, а от 2022г. – и на INEOS Grenadier. В ролята си на такъв, продължаваме с масираната кампания по разширяване на екипите и подобряване качеството на предоставяните услуги в България.      Ако желаете да консултирате и подпомагате сервизната дейност за Mercedes-Benz в страната,            ако сте енергичен, инициативен и работите добре в екип,            ако желаете да имате ежедневен досег с иновациите в автомобилния бранш,            ние Ви очакваме в екипа на Силвър Стар Моторс ЕАД, локация София като:      ОРГАНИЗАТОР, РЕМОНТИ ЗА ЛЕКИ АВТОМОБИЛИ MERCEDES-BENZ ',
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information: "     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '25.06.2023',
     work: 'part time job',
     schedule: '4 hours a fay',
@@ -142,7 +117,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 6,
-    posted_at: '06.03.2023',
+    posted_at: new Date(),
     posted_from: 'Yettel',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
@@ -155,12 +130,7 @@ export const JOBS_POSTS: Job[] = [
       '• Има предишен опит на ниво вносител и/или в сервизна дейност на автомобили (минимум 1 година)      • Притежава диплома за техническа специалност      • Владее отлично английски език (писмено и говоримо)      • Работи с MS Office, специализирани софтуери и уеб базирани платформи      • Е активен шофьор с възможност за посещение на дилърствата в страната (на всеки 2-3 месеца)            Предимство при подбора по документи ще имат кандидати със задълбочени технически познания за автомобили, висше образование и владеене на немски език. ',
     about_us:
       "We are Yettel!      Yettel Bulgaria, part of PPF Telecom Group, is a telecommunications company that connects over 3 million customers to people, devices and businesses. Until March 2022, the company operated on the Bulgarian market as Telenor Bulgaria.            We are a company that wants to discover, develop and invest in technology to serve people in the most useful and effective way for them. At Yettel, we believe that a balanced life is a better life. That's why we do everything we can to help people balance the things that matter to them, to make better choices, especially when it comes to technology and its role in our lives.           We want to create the future together with you. That's why we at Yettel are ready to discover and develop your talent and unique skills as we change the world together.       Role Overview:      The Digital Sales and Marketing team is connecting customers with company's products & services within the digital world. The team is responsible for planning, designing, implementing and maintaining the customer journey and experience across the digital ecosystem.  Currently we are looking for a Digital Platforms Specialist for the Digital Customer Experience team who will be part of the exciting journey of the further development of our digital channels. You would be responsible for creating and constantly improving our award-winning Yettel App and will participate in related company projects.",
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information:"     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '01.04.2023',
     work: 'full time job',
     schedule: '8 hours a fay',
@@ -170,7 +140,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 7,
-    posted_at: '20.10.2023',
+    posted_at: new Date(),
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
@@ -182,12 +152,7 @@ export const JOBS_POSTS: Job[] = [
     necessary_sklils:
       'Your profile:      - University degree in Economics, Mathematics or related;      - At least 1 year experience in a similar role;      - Highly developed analytical and research skills;      - Knowledge of the principles of corporate finance is a plus;      - Ability to communicate with various stakeholders and to handle multiple information;      - Attention to details; high organization skills, keeping deadlines and ability to work independently;      - Written and oral presentation skills;      - Strong team-oriented behavior;      - Good English - written and verbal;      - Experience in MS Office with advanced level in Excel. ',
     about_us: '',
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information:"     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '15.12.2023',
     work: 'permanent job',
     schedule: 'full-time',
@@ -197,7 +162,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 8,
-    posted_at: '11.05.2023',
+    posted_at: new Date(),
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
@@ -210,12 +175,7 @@ export const JOBS_POSTS: Job[] = [
       '• Има предишен опит на ниво вносител и/или в сервизна дейност на автомобили (минимум 1 година)      • Притежава диплома за техническа специалност      • Владее отлично английски език (писмено и говоримо)      • Работи с MS Office, специализирани софтуери и уеб базирани платформи      • Е активен шофьор с възможност за посещение на дилърствата в страната (на всеки 2-3 месеца)            Предимство при подбора по документи ще имат кандидати със задълбочени технически познания за автомобили, висше образование и владеене на немски език. ',
     about_us:
       'Силвър Стар Моторс ЕАД е официалният представител и вносител на автомобили с марки Mercedes-Benz, Setra и FUSO, а от 2022г. – и на INEOS Grenadier. В ролята си на такъв, продължаваме с масираната кампания по разширяване на екипите и подобряване качеството на предоставяните услуги в България.      Ако желаете да консултирате и подпомагате сервизната дейност за Mercedes-Benz в страната,            ако сте енергичен, инициативен и работите добре в екип,            ако желаете да имате ежедневен досег с иновациите в автомобилния бранш,            ние Ви очакваме в екипа на Силвър Стар Моторс ЕАД, локация София като:      ОРГАНИЗАТОР, РЕМОНТИ ЗА ЛЕКИ АВТОМОБИЛИ MERCEDES-BENZ ',
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information: "     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '25.06.2023',
     work: 'part time job',
     schedule: '4 hours a fay',
@@ -225,7 +185,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 9,
-    posted_at: '06.03.2023',
+    posted_at: new Date(),
     posted_from: 'Yettel',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
@@ -238,12 +198,7 @@ export const JOBS_POSTS: Job[] = [
       '• Има предишен опит на ниво вносител и/или в сервизна дейност на автомобили (минимум 1 година)      • Притежава диплома за техническа специалност      • Владее отлично английски език (писмено и говоримо)      • Работи с MS Office, специализирани софтуери и уеб базирани платформи      • Е активен шофьор с възможност за посещение на дилърствата в страната (на всеки 2-3 месеца)            Предимство при подбора по документи ще имат кандидати със задълбочени технически познания за автомобили, висше образование и владеене на немски език. ',
     about_us:
       "We are Yettel!      Yettel Bulgaria, part of PPF Telecom Group, is a telecommunications company that connects over 3 million customers to people, devices and businesses. Until March 2022, the company operated on the Bulgarian market as Telenor Bulgaria.            We are a company that wants to discover, develop and invest in technology to serve people in the most useful and effective way for them. At Yettel, we believe that a balanced life is a better life. That's why we do everything we can to help people balance the things that matter to them, to make better choices, especially when it comes to technology and its role in our lives.           We want to create the future together with you. That's why we at Yettel are ready to discover and develop your talent and unique skills as we change the world together.       Role Overview:      The Digital Sales and Marketing team is connecting customers with company's products & services within the digital world. The team is responsible for planning, designing, implementing and maintaining the customer journey and experience across the digital ecosystem.  Currently we are looking for a Digital Platforms Specialist for the Digital Customer Experience team who will be part of the exciting journey of the further development of our digital channels. You would be responsible for creating and constantly improving our award-winning Yettel App and will participate in related company projects.",
-    contact_information: [
-      {
-        phone: 12345678,
-        mail: 'mail@mail.com',
-      },
-    ],
+    contact_information: "     phone: 12345678,      mail: 'mail@mail.com'",
     deadLine: '01.04.2023',
     work: 'full time job',
     schedule: '8 hours a fay',

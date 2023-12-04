@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+
 import { UserContextService } from 'src/app/context/user-context.service';
 import { User } from 'src/interface/User';
+import { JOBS_POSTS } from 'src/constants';
 
 
 @Component({
@@ -29,22 +30,10 @@ export class PostJobComponent implements OnInit{
   });
   user: User | undefined;
 
-  constructor(private useContext: UserContextService, private router: Router) {}
+  constructor(private useContext: UserContextService) {}
   
  ngOnInit(): void{
-  // this.useContext.value.subscribe((user)=> this.user = user);
-  // if(this.user.firstName === undefined){
-  //   alert("You have to login as employer to post a job!");
-  //   this.router.navigate(["login"]);
-  // } else if (this.user.role !== "employer"){
-  //   if(this.user.firstName === undefined){
-  //     alert("You must registrate as employer!");
-  //     this.router.navigate(["registration"]);
-  //   } else {
-  //     alert("You must registrate as employer, logout first!");
-  //     this.router.navigate(["/"]);
-  //   }
-  // }
+  this.useContext.value.subscribe((user)=> this.user = user);
  }
 
   
@@ -70,7 +59,24 @@ export class PostJobComponent implements OnInit{
         id: Math.floor(Math.random() * 10000000000).toString(36),
         posted_at: new Date(),
         posted_from: this.user.companyName,
+        title: jobTitle.value,
+        location: location.value,
+        responsibilities: responsibilities.value,
+        we_offer: weOffer.value,
+        necessary_skils: necessarySkills.value,
+        about_us: forUs.value,
+        contact_information: contactInformation.value,
+        deadLine: deadLine.value,
+        work: work.value,
+        schedule: schedule.value,
+        suitable_for: suitableFor.value,
+        experience: experience.value,
+        salary:salary.value,
+        logoUrl: logoUrl.value
       };
+      JOBS_POSTS.push(newPost);
+      console.log(JOBS_POSTS);
+      
       alert('hi');
     } catch (error) {
       alert(error.message);

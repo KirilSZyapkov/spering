@@ -14,7 +14,5 @@ export class MyProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.useContext.value.subscribe((acc) => (this.myProfile = acc));
-    console.log(this.myProfile);
-    
   }
 }

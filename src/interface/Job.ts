@@ -1,6 +1,6 @@
 export interface Job {
-    id: number,
-    posted_at: string,
+    id: number | string,
+    posted_at: Date,
     posted_from: string,
     title: string,
     location: string,
@@ -8,7 +8,7 @@ export interface Job {
     we_offer?: string,
     necessary_sklils?: string,
     about_us?: string,
-    contact_information: [{phone: number, mail: string}],
+    contact_information?: string,
     deadLine: string,
     work?: string,
     schedule?: string,

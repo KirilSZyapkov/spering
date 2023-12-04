@@ -16,7 +16,5 @@ export class JobDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get("id");
     this.jobDetail = JOBS_POSTS.find(j => j.id === Number(this.id));
-    console.log(this.jobDetail);
-    
   }
 }

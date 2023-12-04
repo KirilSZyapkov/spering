@@ -31,8 +31,7 @@ export const authGuard = () => {
   const router = inject(Router);
   let user:User | any;
   useContext.value.subscribe(u=> user = u || {});
-  console.log(user);
-  
+    
   if (user.firstName === undefined) {
     alert('You have to login as employer to post a job!');
     router.navigate(['login']);
