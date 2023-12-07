@@ -1,6 +1,6 @@
 export interface Job {
     id: number | string,
-    posted_at: Date,
+    posted_at: string,
     posted_from: string,
     title: string,
     location: string,

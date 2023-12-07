@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* align-items: center; */
+  align-items: center;
+  min-height: 800px;
 }
 
 .h {
@@ -57,9 +58,10 @@
 
 .side-container {
   border: 3px solid lightgray;
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
+  height: 500px;
   gap: 18px;
   right: 0;
   top: 228px;
@@ -82,6 +84,8 @@
   color: #666;
   display: flex;
   align-items: center;
+  overflow-wrap: anywhere;
+  white-space: break-spaces;
 }
 
 .title{

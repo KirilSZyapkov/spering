@@ -4,7 +4,7 @@ import { User } from 'src/interface/User';
 export const JOBS_POSTS: Job[] = [
   {
     id: 1,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
@@ -26,7 +26,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 2,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
@@ -49,7 +49,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 3,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'Yettel',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
@@ -72,7 +72,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 4,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
@@ -94,7 +94,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 5,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
@@ -117,7 +117,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 6,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'Yettel',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',
@@ -140,7 +140,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 7,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'EVN',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo17730.jpg',
     title: 'Sales Controlling Expert',
@@ -162,7 +162,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 8,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'Mercedes-Benz',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo42203.jpg',
     title: 'Организатор, ремонти за леки автомобили',
@@ -185,7 +185,7 @@ export const JOBS_POSTS: Job[] = [
   },
   {
     id: 9,
-    posted_at: new Date(),
+    posted_at: new Date().toUTCString().slice(0, 16),
     posted_from: 'Yettel',
     logoUrl: 'https://www.jobtiger.bg/cinfo/cinfo1009.jpg',
     title: 'Digital Platforms Specialist (maternity cover)',

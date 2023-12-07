@@ -64,7 +64,7 @@ export class PostJobComponent implements OnInit {
       } else {
         const newPost = {
           id: Math.floor(Math.random() * 10000000000).toString(36),
-          posted_at: new Date(),
+          posted_at: new Date().toUTCString().slice(0, 16),
           posted_from: this.user.companyName,
           title: jobTitle.value,
           location: location.value,
@@ -84,7 +84,7 @@ export class PostJobComponent implements OnInit {
 
         JOBS_POSTS.push(newPost);
         this.router.navigate(['/']);
-        console.log(JOBS_POSTS);
+        console.log(logoUrl.value);
       }
     } catch (error) {
       alert(error.message);

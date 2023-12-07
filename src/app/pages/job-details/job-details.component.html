@@ -15,15 +15,15 @@
                 <h2 class="headlin">For us</h2>
                 <p class="job-details">{{jobDetail.about_us}}</p>
             </div>
-            <div class="job-detail-wrapper">
+            <div class="job-detail-wrapper" *ngIf="jobDetail.responsibilities.length !== 0">
                 <h2 class="headlin">Responsibilities</h2>
                 <p class="job-details">{{jobDetail.responsibilities}}</p>
             </div>
-            <div class="job-detail-wrapper">
+            <div class="job-detail-wrapper" *ngIf="jobDetail.necessary_sklils !== ''">
                 <h2 class="headlin">Requirements and necessary skills</h2>
-                <p class="job-details">{{jobDetail.necessary_sklils}}</p>
+                <p class="job-details">{{jobDetail?.necessary_sklils}}</p>
             </div>
-            <div class="job-detail-wrapper">
+            <div class="job-detail-wrapper" *ngIf="jobDetail.we_offer.length !== 0">
                 <h2 class="headlin">We offer</h2>
                 <p class="job-details">{{jobDetail.we_offer}}</p>
             </div>
