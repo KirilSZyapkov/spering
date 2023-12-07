@@ -3,60 +3,60 @@
     <form [formGroup]="postJobForm" class="form-container" (ngSubmit)="onSubmit()">
 
         <label class="form-label" for="jobTitle">Job title</label>
-        <input class="form-input" type="text" placeholder="Job title" name="jobTitle" />
+        <input class="form-input" type="text" placeholder="Job title" formControlName="jobTitle" />
 
 
         <label class="form-label" for="responsibilities">Responsibilities</label>
-        <textarea class="form-textarea" type="text" placeholder="Responsibilities" name="responsibilities"></textarea>
+        <textarea class="form-textarea" type="text" placeholder="Responsibilities" formControlName="responsibilities"></textarea>
 
 
         <label class="form-label" for="forUs">For Us</label>
-        <textarea class="form-textarea" type="text" placeholder="For Us" name="forUs"></textarea>
+        <textarea class="form-textarea" type="text" placeholder="For Us" formControlName="forUs"></textarea>
 
 
         <label class="form-label" for="location">Town</label>
-        <input class="form-input" type="text" placeholder="Town" name="location" />
+        <input class="form-input" type="text" placeholder="Town" formControlName="location" />
 
 
         <label class="form-label" for="weOffer">We offer</label>
-        <textarea class="form-textarea" type="text" placeholder="We offer" name="weOffer"></textarea>
+        <textarea class="form-textarea" type="text" placeholder="We offer" formControlName="weOffer"></textarea>
 
 
         <label class="form-label" for="necessarySkills">Necessary Skills</label>
-        <textarea class="form-textarea" type="text" placeholder="Necessary Skills" name="necessarySkills"></textarea>
+        <textarea class="form-textarea" type="text" placeholder="Necessary Skills" formControlName="necessarySkills"></textarea>
 
 
         <label class="form-label" for="contactInformation">Contact Information</label>
         <textarea class="form-textarea" type="text" placeholder="Contact Information"
-            name="contactInformation"></textarea>
+            formControlName="contactInformation"></textarea>
 
 
         <label class="form-label" for="deadLine">Dead Line</label>
-        <input class="form-input" type="date" placeholder="Dead Line" name="deadLine" />
+        <input class="form-input" type="date" placeholder="Dead Line" formControlName="deadLine" />
 
 
         <label class="form-label" for="work">Work</label>
-        <input class="form-input" type="text" placeholder="Add type of work" name="work" />
+        <input class="form-input" type="text" placeholder="Add type of work" formControlName="work" />
 
 
         <label class="form-label" for="schedule">Schedule</label>
-        <input class="form-input" type="text" placeholder="Add Schedule" name="schedule" />
+        <input class="form-input" type="text" placeholder="Add Schedule" formControlName="schedule" />
 
 
         <label class="form-label" for="suitableFor">Suitable For</label>
-        <input class="form-input" type="text" placeholder="Suitable For" name="suitableFor" />
+        <input class="form-input" type="text" placeholder="Suitable For" formControlName="suitableFor" />
 
 
         <label class="form-label" for="experience">Experience</label>
-        <input class="form-input" type="text" placeholder="Experience" name="experience" />
+        <input class="form-input" type="text" placeholder="Experience" formControlName="experience" />
 
 
         <label class="form-label" for="salary">Salary</label>
-        <input class="form-input" type="number" placeholder="Add salary" name="salary" />
+        <input class="form-input" type="number" placeholder="Add salary" formControlName="salary" />
 
 
         <label class="form-label" for="logoUrl">Logo</label>
-        <input class="form-input" type="text" placeholder="Add logo url" name="logoUrl" />
+        <input class="form-input" type="text" placeholder="Add logo url" formControlName="logoUrl" />
 
         <div class="btn-wrapper">
             <app-button type="submit" title="Post a job" variant="width: 150px;

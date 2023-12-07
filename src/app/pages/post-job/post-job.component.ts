@@ -4,14 +4,14 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { UserContextService } from 'src/app/context/user-context.service';
 import { User } from 'src/interface/User';
 import { JOBS_POSTS } from 'src/constants';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post-job',
   templateUrl: './post-job.component.html',
   styleUrls: ['./post-job.component.css'],
 })
-export class PostJobComponent implements OnInit{
+export class PostJobComponent implements OnInit {
   postJobForm = new FormGroup({
     jobTitle: new FormControl(''),
     responsibilities: new FormControl(''),
@@ -30,13 +30,12 @@ export class PostJobComponent implements OnInit{
   });
   user: User | undefined;
 
-  constructor(private useContext: UserContextService) {}
-  
- ngOnInit(): void{
-  this.useContext.value.subscribe((user)=> this.user = user);
- }
+  constructor(private useContext: UserContextService, private router: Router) {}
 
-  
+  ngOnInit(): void {
+    this.useContext.value.subscribe((user) => (this.user = user));
+  }
+
   onSubmit(): void {
     const {
       jobTitle,
@@ -54,32 +53,44 @@ export class PostJobComponent implements OnInit{
       salary,
       logoUrl,
     } = this.postJobForm.controls;
+
     try {
-      const newPost = {
-        id: Math.floor(Math.random() * 10000000000).toString(36),
-        posted_at: new Date(),
-        posted_from: this.user.companyName,
-        title: jobTitle.value,
-        location: location.value,
-        responsibilities: responsibilities.value,
-        we_offer: weOffer.value,
-        necessary_skils: necessarySkills.value,
-        about_us: forUs.value,
-        contact_information: contactInformation.value,
-        deadLine: deadLine.value,
-        work: work.value,
-        schedule: schedule.value,
-        suitable_for: suitableFor.value,
-        experience: experience.value,
-        salary:salary.value,
-        logoUrl: logoUrl.value
-      };
-      JOBS_POSTS.push(newPost);
-      console.log(JOBS_POSTS);
-      
-      alert('hi');
+      if (
+        jobTitle.value === '' ||
+        location.value === '' ||
+        logoUrl.value === ''
+      ) {
+        throw new Error('Add Job Title, Town and Logo!');
+      } else {
+        const newPost = {
+          id: Math.floor(Math.random() * 10000000000).toString(36),
+          posted_at: new Date(),
+          posted_from: this.user.companyName,
+          title: jobTitle.value,
+          location: location.value,
+          responsibilities: responsibilities.value,
+          we_offer: weOffer.value,
+          necessary_skils: necessarySkills.value,
+          about_us: forUs.value,
+          contact_information: contactInformation.value,
+          deadLine: deadLine.value,
+          work: work.value,
+          schedule: schedule.value,
+          suitable_for: suitableFor.value,
+          experience: experience.value,
+          salary: salary.value,
+          logoUrl: logoUrl.value,
+        };
+
+        JOBS_POSTS.push(newPost);
+        this.router.navigate(['/']);
+        console.log(JOBS_POSTS);
+      }
     } catch (error) {
       alert(error.message);
     }
+    // JOBS_POSTS.push(newPost);
+
+    console.log(JOBS_POSTS);
   }
 }
