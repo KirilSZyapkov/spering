@@ -9,6 +9,7 @@ import { User } from 'src/interface/User';
 })
 export class HeaderComponent implements OnInit {
   translateX: string = 'translateX(1350px)';
+  display: string = 'none';
   isOpen: boolean = true;
   profile: User | null = null;
 
@@ -24,11 +25,13 @@ export class HeaderComponent implements OnInit {
 
   showLinks() {
     this.translateX = 'translateX(0px)';
+    this.display = 'block';
     this.isOpen = false;
   }
 
   hideLinks() {
     this.translateX = 'translateX(1350px)';
+    this.display = 'none';
     this.isOpen = true;
   }
 }

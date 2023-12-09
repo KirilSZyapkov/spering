@@ -96,7 +96,8 @@
   width: 100%;
   margin: auto;
   background-color: #555;
-  
+  display: none;
+  transition: display 500ms ease-in-out;
   color: white;
   border-radius: 10px;
   text-align: center;
@@ -106,10 +107,7 @@
   overflow: hidden;
   background-color: #333;
   position: relative;
-}
-
-.topnav #myLinks {
-  /* display: none; */
+  transition: display 500ms ease-in-out;
 }
 
 .topnav a {
@@ -130,4 +128,17 @@
 .active {
   background-color: #04aa6d;
   color: white;
+}
+
+@media only screen and (max-width: 670px) {
+  .header-links, .header-user-section{
+    display: none;
+  }
+  .desctop{
+    justify-content: space-between;
+    align-content:  center;
+  }
+  .mobile-container{
+    display: block;
+  }
 }

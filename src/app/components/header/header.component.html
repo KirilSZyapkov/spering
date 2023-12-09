@@ -1,7 +1,7 @@
 <header class="header-container">
     <div class="desctop">
+        <div class="head-logo"><img src="assets/logo.png" alt="logo" /></div>
         <div class="header-links">
-            <div class="head-logo"><img src="assets/logo.png" alt="logo" /></div>
             <div class="link-list" [ngStyle]="{'transform': translateX }">
                 <a routerLink="/">Home</a>
                 <a routerLink="/job-search">Job Search</a>
@@ -34,7 +34,7 @@
         </ng-template>
     </div>
     <div class="mobile-container">
-        <div class="topnav">
+        <div class="topnav" [ngStyle]="{'display': display }">
 
             <a routerLink="/">Home</a>
             <a routerLink="/job-search">Job Search</a>
