@@ -1,15 +1,46 @@
 <header class="header-container">
-    <div class="header-links">
-        <div class="head-logo"><img src="assets/logo.png" alt="logo" /></div>
-        <div class="link-list" [ngStyle]="{'transform': translateX }">
+    <div class="desctop">
+        <div class="header-links">
+            <div class="head-logo"><img src="assets/logo.png" alt="logo" /></div>
+            <div class="link-list" [ngStyle]="{'transform': translateX }">
+                <a routerLink="/">Home</a>
+                <a routerLink="/job-search">Job Search</a>
+                <a routerLink="/calendar">Calendar</a>
+            </div>
+        </div>
+        <div class="header-user-section">
+            <div class="user-link" [ngStyle]="{'transform': translateX }">
+                <div class="user-link-wraper" *ngIf="(profile === null || profile.id === undefined); else user">
+
+                    <a routerLink="/login">Login</a>
+                    <a routerLink="/registration">Registration</a>
+                </div>
+                <ng-template #user>
+
+                    <a routerLink="" (click)="logout()">Logout</a>
+                    <a routerLink="/user/{{profile.id}}">{{profile.firstName}}</a>
+                </ng-template>
+            </div>
+
+
+        </div>
+        <div *ngIf="isOpen; else close" (click)="showLinks()" class="hamburger-menu"><i class="uil uil-bars"></i></div>
+        <ng-template #close>
+
+            <div (click)="hideLinks()" class="btn-close">
+
+                <div>&times;</div>
+            </div>
+        </ng-template>
+    </div>
+    <div class="mobile-container">
+        <div class="topnav">
+
             <a routerLink="/">Home</a>
             <a routerLink="/job-search">Job Search</a>
             <a routerLink="/calendar">Calendar</a>
-        </div>
-    </div>
-    <div class="header-user-section">
-        <div class="user-link" [ngStyle]="{'transform': translateX }">
-            <div class="user-link-wraper" *ngIf="(profile === null || profile.id === undefined); else user">
+
+            <div *ngIf="(profile === null || profile.id === undefined); else user">
 
                 <a routerLink="/login">Login</a>
                 <a routerLink="/registration">Registration</a>
@@ -19,19 +50,11 @@
                 <a routerLink="" (click)="logout()">Logout</a>
                 <a routerLink="/user/{{profile.id}}">{{profile.firstName}}</a>
             </ng-template>
+
+
+
         </div>
-
-
     </div>
-    <div *ngIf="isOpen; else close" (click)="showLinks()" class="hamburger-menu"><i class="uil uil-bars"></i></div>
-    <ng-template #close>
-
-        <div (click)="hideLinks()" class="btn-close">
-
-            <div>&times;</div>
-        </div>
-    </ng-template>
-
 </header>
 
-<!-- *ngIf="isClose" -->
+<!-- *ngIf="isClose"  [ngStyle]="{'transform': translateX }"-->
