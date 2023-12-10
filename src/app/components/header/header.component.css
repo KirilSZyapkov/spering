@@ -10,6 +10,8 @@
     color-stop(55%, #1a2e35),
     color-stop(55%, #1cbbb4)
   );
+  overflow: hidden;
+
 }
 
 .desctop {
@@ -97,17 +99,20 @@
   margin: auto;
   background-color: #555;
   display: none;
-  transition: display 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
   color: white;
   border-radius: 10px;
   text-align: center;
+  overflow: hidden;
+ 
 }
 
 .topnav {
   overflow: hidden;
   background-color: #333;
   position: relative;
-  transition: display 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  
 }
 
 .topnav a {
